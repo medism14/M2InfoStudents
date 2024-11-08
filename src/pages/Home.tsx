@@ -10,7 +10,7 @@ type Props = {};
 
 export default function Home({}: Props) {
   const [data, setData] = useState<User[]>([]);
-  const [professorData, setProfessorData] = useState<User>();
+  // const [professorData, setProfessorData] = useState<User>();
   const [search, setSearch] = useState("");
 
   useEffect(() => {
@@ -29,7 +29,7 @@ export default function Home({}: Props) {
       setData(newData);
     } else {
       const newData = dataJson.filter((user) => user.id !== 0);
-      setProfessorData(dataJson[0]);
+      // setProfessorData(dataJson[0]);
       setData(newData);
     }
   }, [search]);
