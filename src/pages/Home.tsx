@@ -1,6 +1,5 @@
 /** @format */
 
-import React from "react";
 import { useEffect, useState } from "react";
 import dataJson from "../utils/data.json";
 import UserCard from "../components/PageComponents/Home/UserCard";
