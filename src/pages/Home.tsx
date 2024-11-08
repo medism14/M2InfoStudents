@@ -44,12 +44,12 @@ export default function Home({}: Props) {
 
   return (
     <>
-      {professorData && (
+      {/* {professorData && (
         <div className="flex items-center flex flex-col gap-[8px]">
           <p className="text-center font-bold text-[30px]">Our professor</p>
           <UserCard key={professorData.id} user={professorData} />
         </div>
-      )}
+      )} */}
 
       <section className="flex flex-col gap-[50px] w-full bg-[#444444] px-[40px] py-[20px] rounded">
         {/* Search Bar */}
