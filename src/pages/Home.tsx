@@ -17,15 +17,11 @@ export default function Home({}: Props) {
     if (search) {
       const newData = dataJson.filter(
         (user) =>
-          user.id != 0 && (user.firstName.toLowerCase().includes(search.toLowerCase()) ||
-          user.lastName.toLowerCase().includes(search.toLowerCase()))
+          user.id != 0 &&
+          (user.firstName.toLowerCase().includes(search.toLowerCase()) ||
+            user.lastName.toLowerCase().includes(search.toLowerCase()))
       );
       console.log(newData);
-      if (newData) {
-        console.log("oui");
-      } else {
-        console.log("non");
-      }
       setData(newData);
     } else {
       const newData = dataJson.filter((user) => user.id !== 0);
@@ -36,7 +32,7 @@ export default function Home({}: Props) {
 
   useEffect(() => {
     TabTitle("M2 Info Students");
-  }, [])
+  }, []);
 
   const handleSearchValue = (event: any) => {
     setSearch(event.target.value);

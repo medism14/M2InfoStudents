@@ -102,7 +102,7 @@ export default function Information() {
 
               <div className="mb-6">
                 <h2 className="text-2xl font-semibold mb-2 text-red-400">
-                  Areas for Improvement
+                  Coding Weaknesses
                 </h2>
                 <p>{user.codingWeaknesses}</p>
               </div>
