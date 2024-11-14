@@ -31,7 +31,7 @@ export default function Home({}: Props) {
   }, [search]);
 
   useEffect(() => {
-    TabTitle("M2 Info Students");
+    TabTitle("M2 Info Players");
   }, []);
 
   const handleSearchValue = (event: any) => {
