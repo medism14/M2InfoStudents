@@ -56,7 +56,7 @@ export default function Home({}: Props) {
           placeholder="Recherchez un nom d'étudiant"
         />
 
-        <h1 className="text-[40px] font-bold text-center">M2DFSW Students</h1>
+        <h1 className="text-[40px] font-bold text-center">M2DFSW Players</h1>
         {data.length > 0 && (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {data.map((user) => (
